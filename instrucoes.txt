@@ -23,3 +23,6 @@ Executar os scripts criados pelo comando makemigrations:
 
 Criar superusuário/admin para acessar a seção de administração:
     python manage.py createsuperuser
+
+Criar modelo de banco de dados do objeto Carro
+    ./cars/models.py
