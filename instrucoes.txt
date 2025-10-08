@@ -1,0 +1,25 @@
+venv
+pip install django
+django-admin --version
+django-admin startproject app . # app ou core
+rodar / python manage.py runserver
+
+python manage.py startapp cars
+edit app\settings.py
+    add 'cars' in INSTALLED_APPS
+
+Arquivos dos apps:
+    tests.py: testes unitários, testes de integração
+    apps.py: configs básicas do app atual
+    models.py: modelos (tabelas do banco de dados)
+    views.py: funcionalidades dos app, lógica da aplicação (o que fazer e renderizar)
+    admin.py: relação com o admin do django, administração da app
+
+Preparar/criar arquivos de migrations (instruções de alterações no banco de dados):
+    python manage.py makemigrations
+
+Executar os scripts criados pelo comando makemigrations:
+    python manage.py migrate
+
+Criar superusuário/admin para acessar a seção de administração:
+    python manage.py createsuperuser
